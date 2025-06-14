@@ -203,6 +203,14 @@ def send_email_notification(subject, body):
     gmail_password = os.getenv('GMAIL_APP_PASSWORD')
     email_recipient = os.getenv('EMAIL_RECIPIENT')
 
+    # Improved diagnostics for missing credentials
+    if not gmail_user:
+        print("Missing GMAIL_USER environment variable.")
+    if not gmail_password:
+        print("Missing GMAIL_APP_PASSWORD environment variable.")
+    if not email_recipient:
+        print("Missing EMAIL_RECIPIENT environment variable.")
+
     if not all([gmail_user, gmail_password, email_recipient]):
         print("Missing Gmail email notification credentials")
         return False
