@@ -313,4 +313,8 @@ def main():
     print("Snapshot updated")
 
 if __name__ == "__main__":
-    main()
+    if os.getenv("TEST_EMAIL", "false").lower() == "true":
+        send_email_notification("Test Email from CornellChecker", "This is a test email from your GitHub Actions workflow.")
+        print("Test email sent. Exiting.")
+    else:
+        main()
