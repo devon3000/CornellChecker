@@ -197,17 +197,42 @@ def send_sms_gmail(message):
         print(f"Error sending SMS via Gmail: {e}")
         return False
 
-def send_notification(message):
-    """Send notification via available method"""
-    print(f"Sending notification: {message}")
-    
-    # Try Twilio first, then Gmail SMS
-    if send_sms_twilio(message):
+def send_email_notification(subject, body):
+    """Send an email notification using Gmail SMTP"""
+    gmail_user = os.getenv('GMAIL_USER')
+    gmail_password = os.getenv('GMAIL_APP_PASSWORD')
+    email_recipient = os.getenv('EMAIL_RECIPIENT')
+
+    if not all([gmail_user, gmail_password, email_recipient]):
+        print("Missing Gmail email notification credentials")
+        return False
+
+    try:
+        msg = MIMEText(body)
+        msg['Subject'] = subject
+        msg['From'] = gmail_user
+        msg['To'] = email_recipient
+
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.starttls()
+        server.login(gmail_user, gmail_password)
+        server.send_message(msg)
+        server.quit()
+
+        print("Email notification sent successfully")
         return True
-    elif send_sms_gmail(message):
+    except Exception as e:
+        print(f"Error sending email notification: {e}")
+        return False
+
+def send_notification(message):
+    """Send notification via email"""
+    print(f"Sending notification: {message}")
+    subject = "Cornell Visit Activities Update"
+    if send_email_notification(subject, message):
         return True
     else:
-        print("All notification methods failed")
+        print("Email notification failed")
         return False
 
 def compare_snapshots(old_data, new_data):
