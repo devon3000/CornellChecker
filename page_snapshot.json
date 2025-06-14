@@ -1,0 +1,296 @@
+{
+  "forms": {
+    "form_0": {
+      "action": "/search/",
+      "method": "get",
+      "inputs": [
+        {
+          "type": "search",
+          "name": "q",
+          "value": "",
+          "text": ""
+        },
+        {
+          "type": "submit",
+          "name": "submit-search",
+          "value": "",
+          "text": "Search"
+        }
+      ]
+    },
+    "form_1": {
+      "action": "/visit/plan/activities/index.cfm",
+      "method": "post",
+      "inputs": [
+        {
+          "type": "text",
+          "name": "date",
+          "value": "06/27/2025 ",
+          "text": ""
+        },
+        {
+          "type": "button",
+          "name": "",
+          "value": "",
+          "text": ""
+        },
+        {
+          "type": "submit",
+          "name": "submit",
+          "value": "Update Filters",
+          "text": ""
+        },
+        {
+          "type": "button",
+          "name": "",
+          "value": "",
+          "text": "Cancel"
+        }
+      ]
+    }
+  },
+  "activities": [
+    {
+      "selector": "[class*=\"event\"]",
+      "text": "General Campus TourThis tour will give you an introduction to Cornell's history, its undergraduate colleges and schools, student life, athletics, and some legend and tradition. The tours are wheelchair accessible and are conducted outdoors. We hold tours rain or shine. In inclement weather, tours may be shortened and/or modified to avoid hazardous conditions. In the case of university closure, the Martin Y. Tang Welcome Center is closed, and tours are canceled.Times & Locations10:30 a.m.\u2013 11:45 a.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full1:00 p.m.\u2013 2:15 p.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full3:00 p.m.\u2013 4:15 p.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full",
+      "href": "",
+      "class": [
+        "item-wrapper",
+        "event-card"
+      ]
+    },
+    {
+      "selector": "[class*=\"event\"]",
+      "text": "Undergraduate Admissions Information SessionThe Undergraduate Admissions Office Information Session provides a brief overview of student and campus life while also covering the admissions and financial aid processes. Prospective applicants and their families will benefit from this general introduction to Cornell University. This session lasts approximately 30-35 minutes and does not include a campus tour.Times & Locations9:00 a.m.\u2013 9:30 a.m.Biotechnology Building - Room G10This time slot is full",
+      "href": "",
+      "class": [
+        "item-wrapper",
+        "event-card"
+      ]
+    },
+    {
+      "selector": "[class*=\"event\"]",
+      "text": "College of Agriculture and Life Sciences Undergraduate Admissions Information SessionThe College of Agriculture and Life Sciences (CALS) Information Session helps prospective first-year and transfer students thoughtfully consider CALS and prepare for the Admissions process. Topics of focus include academics, experiential learning, student life and the inclusive, supportive CALS community. The Admissions discussion offers insight into the various application components and how applications are holistically evaluated. Q&A is encouraged.Times & Locations12:00 p.m.\u2013 1:00 p.m.Biotechnology Building - Room G10Add",
+      "href": "",
+      "class": [
+        "item-wrapper",
+        "event-card"
+      ]
+    },
+    {
+      "selector": "[class*=\"event\"]",
+      "text": "College of Arts & Sciences Information SessionExplore the liberal arts at Cornell\u2019s College of Arts & Sciences! Rooted in curiosity and interdisciplinary learning, Arts & Sciences offers the freedom to explore before declaring one of 40+ majors. In this 60-minute session, learn how the Arts & Sciences curriculum provides both breadth and depth, fostering critical thinking and discovery across disciplines. We\u2019ll cover academics, student resources, and admissions, with time for Q&A.Times & Locations11:00 a.m.\u2013 12:00 p.m.Goldwin Smith Hall - Room 132This time slot is full",
+      "href": "",
+      "class": [
+        "item-wrapper",
+        "event-card"
+      ]
+    },
+    {
+      "selector": "[class*=\"event\"]",
+      "text": "Cornell Jeb E. Brooks School of Public Policy Undergraduate Admissions Information SessionMeet with the Office of Admissions, Student Services, and Career Management team from the Jeb E. Brooks School of Public Policy to learn more about the unique academic opportunities within the School, the Brooks School student experience, and the admission process.Times & Locations2:00 p.m.\u2013 2:50 p.m.MVR Hall - Room 1153Add",
+      "href": "",
+      "class": [
+        "item-wrapper",
+        "event-card"
+      ]
+    },
+    {
+      "selector": "[class*=\"event\"]",
+      "text": "Cornell SC Johnson College of Business Undergraduate Admissions Information SessionIntended for students interested in business, this session features the SC Johnson College of Business and its two AACSB-accredited schools: the Dyson School of Applied Economics and Management and the Nolan School of Hotel Administration. Here you will learn about the unique academic and career opportunities within both schools and gain insight into the admission process. This session lasts approximately 50 minutes. Please note, there are certain dates that will be closed once room capacity is reached. For those dates, walk-ins will not be permitted.Times & Locations11:00 a.m.\u2013 11:50 a.m.Biotechnology Building - Room G10Add",
+      "href": "",
+      "class": [
+        "item-wrapper",
+        "event-card"
+      ]
+    },
+    {
+      "selector": "[class*=\"event\"]",
+      "text": "Engineering Undergraduate Admissions Information SessionDuring the Engineering Undergraduate Admissions Information Session, a College of Engineering admissions representative will describe the academic programs, research, project team program, a variety of additional engineering-specific topics, and the admissions process within the College of Engineering.Times & Locations10:00 a.m.\u2013 10:50 a.m.Biotechnology Building - Room G10This time slot is full",
+      "href": "",
+      "class": [
+        "item-wrapper",
+        "event-card"
+      ]
+    },
+    {
+      "selector": "[class*=\"event\"]",
+      "text": "Human Ecology Undergraduate Admissions Information SessionCollege of Human Ecology (CHE) Undergraduate Admissions Staff will host Q&A sessions that will focus on and be driven by our guests\u2019 questions about our academic programs, community engagement, and other aspects of the CHE experience and education. Review our recorded sessions (https://blogs.cornell.edu/admissions/human-ecology-information-session/) in advance of joining a session and bring your questions. The seating capacity of the Q&A sessions might need to be limited to the prospective student plus one guest.Times & Locations10:00 a.m.\u2013 10:50 a.m.MVR Hall - Room 1220Add",
+      "href": "",
+      "class": [
+        "item-wrapper",
+        "event-card"
+      ]
+    },
+    {
+      "selector": "[class*=\"event\"]",
+      "text": "Industrial and Labor Relations (ILR) Undergraduate Admissions Information SessionProspective students are encouraged to visit campus and attend an ILR information session. This presentation will introduce you to the ILR curriculum, career and graduate school advising, internships, student organizations, international opportunities, and the admissions process for first-year and transfer admission.Times & Locations1:00 p.m.\u2013 2:00 p.m.Ives Hall - Room 217Add",
+      "href": "",
+      "class": [
+        "item-wrapper",
+        "event-card"
+      ]
+    },
+    {
+      "selector": ".btn",
+      "text": "Next: ReviewItinerary(0)",
+      "href": "/visit/plan/review",
+      "class": [
+        "btn",
+        "btn-nextBTN"
+      ]
+    },
+    {
+      "selector": ".btn",
+      "text": "Change date",
+      "href": "",
+      "class": [
+        "btn",
+        "btn-filterToggle"
+      ]
+    },
+    {
+      "selector": ".btn",
+      "text": "Next: ReviewItinerary(0)",
+      "href": "/visit/plan/review",
+      "class": [
+        "btn",
+        "btn-nextBTN"
+      ]
+    },
+    {
+      "selector": "button",
+      "text": "Search",
+      "href": "/search/",
+      "class": [
+        "icon-search"
+      ]
+    },
+    {
+      "selector": "button",
+      "text": "toggle menu",
+      "href": "/search/",
+      "class": [
+        "icon-menu"
+      ]
+    },
+    {
+      "selector": "button",
+      "text": "Toggle navigation",
+      "href": "/_includes/header.cfm",
+      "class": [
+        "submenu-trigger"
+      ]
+    },
+    {
+      "selector": "button",
+      "text": "Search",
+      "href": "",
+      "class": [
+        "icon-search",
+        "search-submit"
+      ]
+    },
+    {
+      "selector": "button",
+      "text": "Change date",
+      "href": "",
+      "class": [
+        "btn",
+        "btn-filterToggle"
+      ]
+    },
+    {
+      "selector": "button",
+      "text": "Cancel",
+      "href": "",
+      "class": [
+        "btn-boot",
+        "btn-lg",
+        "pull-right",
+        "closeForm"
+      ]
+    },
+    {
+      "selector": "button",
+      "text": "prev day",
+      "href": "?date=6-26-2025",
+      "class": [
+        "actionDayNav",
+        "dayNavButtons"
+      ]
+    },
+    {
+      "selector": "button",
+      "text": "next day",
+      "href": "?date=6-28-2025",
+      "class": [
+        "actionDayNav",
+        "dayNavButtons"
+      ]
+    }
+  ],
+  "status_elements": [
+    {
+      "keyword": "available",
+      "text": "// from foot.cfm\n  function above960breakpoint(){\n    //if we hit this, we already paid the penalty.  No going back.\n    //Some things aren't shown on mobile. only include them if they're shown.\n    lazyLoadVideo(\"#gloriousToView\");\n    lazyLoadVideo(\"video\");\n\n    //nav images don't show until 960px\n   if (typeof Imager !==\"undefined\"){\n     // for increasing page load speed on mobile\n     new Imager('.lazyload-above-960',{availableWidths:{}});\n     new Imager('.responsive-img-large',{availableWidths:{\n       400:'377x212',\n       600:'1280x720'\n     }});\n     new Imager('.honeycomb-tile',{availableWidths:{\n        400:'377x212',\n        600:'1280x720'\n      }});\n   }\n  }\n function lazyLoadVideo(selector){\n\n    $(selector).find(\"source\").each(function(i,el){\n      var src = $(el).data('src');\n      // if the src is not undefined and has not already been set, set it and load the video\n      if (\"undefined\" != typeof src && src != $(el).attr('src') ){\n        $(el).attr('src',src);\n        $(el).parent().load();\n      }\n    });\n  }\n  //taken from underscore.js\n  function debounce(func, wait, immediate) {\n    var timeout;\n    return function() {\n      var context = this, args = arguments;\n      var later = function() {\n        timeout = null;\n        if (!immediate) func.apply(context, args);\n      };\n      var callNow = immediate && !timeout;\n      clearTimeout(timeout);\n      timeout = setTimeout(later, wait);\n      if (callNow) func.apply(context, args);\n    };\n  };\n    $(function(){\n      function handleResize(){\n        if ($(window).width()>960){\n          above960breakpoint();\n        } else {\n          //on mobile, load the galapagos bg, otherwise the video is there.\n          $('#sesqui-video').css(\"background-image\", \"url(/assets/images/video/features/glorious-to-view.jpg); clear: both;\");\n        }\n      }\n      resizeEventHandler = debounce(handleResize, 250);\n      window.addEventListener('resize',resizeEventHandler);\n      handleResize();\n      \n    });",
+      "parent_tag": "script",
+      "parent_class": []
+    },
+    {
+      "keyword": "full",
+      "text": "This time slot is full",
+      "parent_tag": "em",
+      "parent_class": []
+    },
+    {
+      "keyword": "full",
+      "text": "This time slot is full",
+      "parent_tag": "em",
+      "parent_class": []
+    },
+    {
+      "keyword": "full",
+      "text": "This time slot is full",
+      "parent_tag": "em",
+      "parent_class": []
+    },
+    {
+      "keyword": "full",
+      "text": "This time slot is full",
+      "parent_tag": "em",
+      "parent_class": []
+    },
+    {
+      "keyword": "full",
+      "text": "The College of Agriculture and Life Sciences (CALS) Information Session helps prospective first-year and transfer students thoughtfully consider CALS and prepare for the Admissions process. Topics of focus include academics, experiential learning, student life and the inclusive, supportive CALS community. The Admissions discussion offers insight into the various application components and how applications are holistically evaluated. Q&A is encouraged.",
+      "parent_tag": "div",
+      "parent_class": [
+        "full-details",
+        "desc"
+      ]
+    },
+    {
+      "keyword": "full",
+      "text": "This time slot is full",
+      "parent_tag": "em",
+      "parent_class": []
+    },
+    {
+      "keyword": "full",
+      "text": "This time slot is full",
+      "parent_tag": "em",
+      "parent_class": []
+    },
+    {
+      "keyword": "register",
+      "text": "Register",
+      "parent_tag": "span",
+      "parent_class": [
+        "h4"
+      ]
+    }
+  ],
+  "page_title": "Plan Your Visit | Cornell University",
+  "timestamp": "2025-06-14T18:45:39.437712"
+}
