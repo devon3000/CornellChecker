@@ -309,7 +309,10 @@ def main():
     
     if changes:
         change_summary = "; ".join(changes[:3])  # Limit to first 3 changes
-        message = f"Cornell Visit Page Changed!\n\n{change_summary}\n\nCheck: {TARGET_URL}"
+        message = (
+            f"Cornell Visit Page Changed!\n\n{change_summary}\n\n"
+            f"Check: {TARGET_URL}"
+        )
         
         print(f"Changes detected: {change_summary}")
         send_notification(message)
@@ -325,7 +328,7 @@ if __name__ == "__main__":
         print("TEST_EMAIL is true, sending test email...")
         success = send_email_notification(
             "Test Email from CornellChecker",
-            "This is a test email from your GitHub Actions workflow."
+            f"This is a test email from your GitHub Actions workflow.\n\nMonitored URL: {TARGET_URL}"
         )
         if success:
             print("Test email sent successfully.")
