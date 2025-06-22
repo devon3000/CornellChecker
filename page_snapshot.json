@@ -52,7 +52,7 @@
   "activities": [
     {
       "selector": "[class*=\"event\"]",
-      "text": "General Campus TourThis tour will give you an introduction to Cornell's history, its undergraduate colleges and schools, student life, athletics, and some legend and tradition. The tours are wheelchair accessible and are conducted outdoors. We hold tours rain or shine. In inclement weather, tours may be shortened and/or modified to avoid hazardous conditions. In the case of university closure, the Martin Y. Tang Welcome Center is closed, and tours are canceled.Times & Locations10:30 a.m.\u2013 11:45 a.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full1:00 p.m.\u2013 2:15 p.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full3:00 p.m.\u2013 4:15 p.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaAdd",
+      "text": "General Campus TourThis tour will give you an introduction to Cornell's history, its undergraduate colleges and schools, student life, athletics, and some legend and tradition. The tours are wheelchair accessible and are conducted outdoors. We hold tours rain or shine. In inclement weather, tours may be shortened and/or modified to avoid hazardous conditions. In the case of university closure, the Martin Y. Tang Welcome Center is closed, and tours are canceled.Times & Locations10:30 a.m.\u2013 11:45 a.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full1:00 p.m.\u2013 2:15 p.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full3:00 p.m.\u2013 4:15 p.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full",
       "href": "",
       "class": [
         "item-wrapper",
@@ -257,6 +257,12 @@
     },
     {
       "keyword": "full",
+      "text": "This time slot is full",
+      "parent_tag": "em",
+      "parent_class": []
+    },
+    {
+      "keyword": "full",
       "text": "The College of Agriculture and Life Sciences (CALS) Information Session helps prospective first-year and transfer students thoughtfully consider CALS and prepare for the Admissions process. Topics of focus include academics, experiential learning, student life and the inclusive, supportive CALS community. The Admissions discussion offers insight into the various application components and how applications are holistically evaluated. Q&A is encouraged.",
       "parent_tag": "div",
       "parent_class": [
@@ -286,5 +292,5 @@
     }
   ],
   "page_title": "Plan Your Visit | Cornell University",
-  "timestamp": "2025-06-22T21:49:14.391018"
+  "timestamp": "2025-06-22T21:59:12.273540"
 }
