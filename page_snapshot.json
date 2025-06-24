@@ -52,7 +52,7 @@
   "activities": [
     {
       "selector": "[class*=\"event\"]",
-      "text": "General Campus TourThis tour will give you an introduction to Cornell's history, its undergraduate colleges and schools, student life, athletics, and some legend and tradition. The tours are wheelchair accessible and are conducted outdoors. We hold tours rain or shine. In inclement weather, tours may be shortened and/or modified to avoid hazardous conditions. In the case of university closure, the Martin Y. Tang Welcome Center is closed, and tours are canceled.Times & Locations10:30 a.m.\u2013 11:45 a.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full1:00 p.m.\u2013 2:15 p.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full3:00 p.m.\u2013 4:15 p.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full",
+      "text": "General Campus TourThis tour will give you an introduction to Cornell's history, its undergraduate colleges and schools, student life, athletics, and some legend and tradition. The tours are wheelchair accessible and are conducted outdoors. We hold tours rain or shine. In inclement weather, tours may be shortened and/or modified to avoid hazardous conditions. In the case of university closure, the Martin Y. Tang Welcome Center is closed, and tours are canceled.Times & Locations10:30 a.m.\u2013 11:45 a.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full1:00 p.m.\u2013 2:15 p.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaThis time slot is full3:00 p.m.\u2013 4:15 p.m.Martin Y. Tang Welcome Center at Noyes LodgeEnd Location:Ho PlazaAdd",
       "href": "",
       "class": [
         "item-wrapper",
@@ -79,7 +79,7 @@
     },
     {
       "selector": "[class*=\"event\"]",
-      "text": "College of Arts & Sciences Information SessionExplore the liberal arts at Cornell\u2019s College of Arts & Sciences! Rooted in curiosity and interdisciplinary learning, Arts & Sciences offers the freedom to explore before declaring one of 40+ majors. In this 60-minute session, learn how the Arts & Sciences curriculum provides both breadth and depth, fostering critical thinking and discovery across disciplines. We\u2019ll cover academics, student resources, and admissions, with time for Q&A.Times & Locations11:00 a.m.\u2013 12:00 p.m.Goldwin Smith Hall - Room 132This time slot is full",
+      "text": "College of Arts & Sciences Information SessionExplore the liberal arts at Cornell\u2019s College of Arts & Sciences! Rooted in curiosity and interdisciplinary learning, Arts & Sciences offers the freedom to explore before declaring one of 40+ majors. In this 60-minute session, learn how the Arts & Sciences curriculum provides both breadth and depth, fostering critical thinking and discovery across disciplines. We\u2019ll cover academics, student resources, and admissions, with time for Q&A.Times & Locations11:00 a.m.\u2013 12:00 p.m.Goldwin Smith Hall - Room 132Add",
       "href": "",
       "class": [
         "item-wrapper",
@@ -257,24 +257,12 @@
     },
     {
       "keyword": "full",
-      "text": "This time slot is full",
-      "parent_tag": "em",
-      "parent_class": []
-    },
-    {
-      "keyword": "full",
       "text": "The College of Agriculture and Life Sciences (CALS) Information Session helps prospective first-year and transfer students thoughtfully consider CALS and prepare for the Admissions process. Topics of focus include academics, experiential learning, student life and the inclusive, supportive CALS community. The Admissions discussion offers insight into the various application components and how applications are holistically evaluated. Q&A is encouraged.",
       "parent_tag": "div",
       "parent_class": [
         "full-details",
         "desc"
       ]
-    },
-    {
-      "keyword": "full",
-      "text": "This time slot is full",
-      "parent_tag": "em",
-      "parent_class": []
     },
     {
       "keyword": "full",
@@ -292,5 +280,5 @@
     }
   ],
   "page_title": "Plan Your Visit | Cornell University",
-  "timestamp": "2025-06-24T18:27:10.976486"
+  "timestamp": "2025-06-24T18:51:45.725341"
 }
