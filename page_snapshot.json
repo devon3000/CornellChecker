@@ -106,7 +106,7 @@
     },
     {
       "selector": "[class*=\"event\"]",
-      "text": "Engineering Undergraduate Admissions Information SessionDuring the Engineering Undergraduate Admissions Information Session, a College of Engineering admissions representative will describe the academic programs, research, project team program, a variety of additional engineering-specific topics, and the admissions process within the College of Engineering.Times & Locations10:00 a.m.\u2013 10:50 a.m.Biotechnology Building - Room G10This time slot is full",
+      "text": "Engineering Undergraduate Admissions Information SessionDuring the Engineering Undergraduate Admissions Information Session, a College of Engineering admissions representative will describe the academic programs, research, project team program, a variety of additional engineering-specific topics, and the admissions process within the College of Engineering.Times & Locations10:00 a.m.\u2013 10:50 a.m.Biotechnology Building - Room G10Add",
       "href": "",
       "class": [
         "item-wrapper",
@@ -253,12 +253,6 @@
       ]
     },
     {
-      "keyword": "full",
-      "text": "This time slot is full",
-      "parent_tag": "em",
-      "parent_class": []
-    },
-    {
       "keyword": "register",
       "text": "Register",
       "parent_tag": "span",
@@ -268,5 +262,5 @@
     }
   ],
   "page_title": "Plan Your Visit | Cornell University",
-  "timestamp": "2025-06-26T23:56:50.651452"
+  "timestamp": "2025-06-27T01:56:09.850453"
 }
