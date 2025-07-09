@@ -26,7 +26,7 @@ SNAPSHOT_FILE = "page_snapshot.json"
 CONTENT_FILE = "page_content.html"
 
 def fetch_page_content():
-    """Fetch and parse the Cornell visit page"""
+    """Fetch and parse the Northeastern visit page"""
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
@@ -94,7 +94,7 @@ def extract_form_data(html_content):
     status_elements = []
     
     for keyword in status_keywords:
-        elements = soup.find_all(text=lambda x: x and keyword.lower() in x.lower())
+        elements = soup.find_all(string=lambda x: x and keyword.lower() in x.lower())
         for elem in elements:
             if elem.parent:
                 status_elements.append({
