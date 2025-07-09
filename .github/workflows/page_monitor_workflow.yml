@@ -32,7 +32,7 @@ jobs:
           TEST_EMAIL: ${{ github.event.inputs.test_email }}
         run: |
           TODAY=$(date -u +%Y-%m-%d)
-          STOP_DATE="2025-07-28"
+          STOP_DATE="2025-07-11"
           if [[ "$TODAY" > "$STOP_DATE" ]]; then
             echo "Date is after $STOP_DATE. Exiting workflow."
             exit 0
