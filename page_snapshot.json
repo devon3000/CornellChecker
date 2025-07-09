@@ -1,179 +1,53 @@
 {
   "forms": {
     "form_0": {
-      "action": "/search/",
-      "method": "get",
-      "inputs": [
-        {
-          "type": "search",
-          "name": "q",
-          "value": "",
-          "text": ""
-        },
-        {
-          "type": "submit",
-          "name": "submit-search",
-          "value": "",
-          "text": "Search"
-        }
-      ]
-    },
-    "form_1": {
-      "action": "/visit/plan/activities/index.cfm",
+      "action": "https://apply.northeastern.edu/register/?id=a02017b1-9598-4898-b883-e11e8b7caca3&cmd=submit&output=xdm&embedElement=form_a02017b1-9598-4898-b883-e11e8b7caca3",
       "method": "post",
       "inputs": [
         {
-          "type": "text",
-          "name": "date",
-          "value": "06/27/2025 ",
+          "type": "hidden",
+          "name": "id",
+          "value": "a02017b1-9598-4898-b883-e11e8b7caca3",
           "text": ""
         },
         {
-          "type": "button",
+          "type": "hidden",
+          "name": "sk",
+          "value": "1QuiXSdfR_xINvxGEJVDJBLnGyySXbIHuiy-41FJDIpACW9Tu1SGbqRx1bunXQ9tH16xExNLIDRZEOJXLbZTYhc4C9cjWu5I",
+          "text": ""
+        },
+        {
+          "type": "hidden",
+          "name": "referrer",
+          "value": "https://apply.northeastern.edu/",
+          "text": ""
+        },
+        {
+          "type": "hidden",
           "name": "",
-          "value": "",
+          "value": "2025-07-10T10:00:00",
           "text": ""
-        },
-        {
-          "type": "submit",
-          "name": "submit",
-          "value": "Update Filters",
-          "text": ""
-        },
-        {
-          "type": "button",
-          "name": "",
-          "value": "",
-          "text": "Cancel"
         }
       ]
     }
   },
-  "activities": [
-    {
-      "selector": ".btn",
-      "text": "Next: ReviewItinerary(0)",
-      "href": "/visit/plan/review",
-      "class": [
-        "btn",
-        "btn-nextBTN"
-      ]
-    },
-    {
-      "selector": ".btn",
-      "text": "Change date",
-      "href": "",
-      "class": [
-        "btn",
-        "btn-filterToggle"
-      ]
-    },
-    {
-      "selector": ".btn",
-      "text": "Next: ReviewItinerary(0)",
-      "href": "/visit/plan/review",
-      "class": [
-        "btn",
-        "btn-nextBTN"
-      ]
-    },
-    {
-      "selector": "button",
-      "text": "Search",
-      "href": "/search/",
-      "class": [
-        "icon-search"
-      ]
-    },
-    {
-      "selector": "button",
-      "text": "toggle menu",
-      "href": "/search/",
-      "class": [
-        "icon-menu"
-      ]
-    },
-    {
-      "selector": "button",
-      "text": "Toggle navigation",
-      "href": "/_includes/header.cfm",
-      "class": [
-        "submenu-trigger"
-      ]
-    },
-    {
-      "selector": "button",
-      "text": "Search",
-      "href": "",
-      "class": [
-        "icon-search",
-        "search-submit"
-      ]
-    },
-    {
-      "selector": "button",
-      "text": "Change date",
-      "href": "",
-      "class": [
-        "btn",
-        "btn-filterToggle"
-      ]
-    },
-    {
-      "selector": "button",
-      "text": "Cancel",
-      "href": "",
-      "class": [
-        "btn-boot",
-        "btn-lg",
-        "pull-right",
-        "closeForm"
-      ]
-    },
-    {
-      "selector": "button",
-      "text": "prev day",
-      "href": "?date=6-26-2025",
-      "class": [
-        "actionDayNav",
-        "dayNavButtons"
-      ]
-    },
-    {
-      "selector": "button",
-      "text": "next day",
-      "href": "?date=6-28-2025",
-      "class": [
-        "actionDayNav",
-        "dayNavButtons"
-      ]
-    }
-  ],
+  "activities": [],
   "status_elements": [
     {
-      "keyword": "available",
-      "text": "// from foot.cfm\n  function above960breakpoint(){\n    //if we hit this, we already paid the penalty.  No going back.\n    //Some things aren't shown on mobile. only include them if they're shown.\n    lazyLoadVideo(\"#gloriousToView\");\n    lazyLoadVideo(\"video\");\n\n    //nav images don't show until 960px\n   if (typeof Imager !==\"undefined\"){\n     // for increasing page load speed on mobile\n     new Imager('.lazyload-above-960',{availableWidths:{}});\n     new Imager('.responsive-img-large',{availableWidths:{\n       400:'377x212',\n       600:'1280x720'\n     }});\n     new Imager('.honeycomb-tile',{availableWidths:{\n        400:'377x212',\n        600:'1280x720'\n      }});\n   }\n  }\n function lazyLoadVideo(selector){\n\n    $(selector).find(\"source\").each(function(i,el){\n      var src = $(el).data('src');\n      // if the src is not undefined and has not already been set, set it and load the video\n      if (\"undefined\" != typeof src && src != $(el).attr('src') ){\n        $(el).attr('src',src);\n        $(el).parent().load();\n      }\n    });\n  }\n  //taken from underscore.js\n  function debounce(func, wait, immediate) {\n    var timeout;\n    return function() {\n      var context = this, args = arguments;\n      var later = function() {\n        timeout = null;\n        if (!immediate) func.apply(context, args);\n      };\n      var callNow = immediate && !timeout;\n      clearTimeout(timeout);\n      timeout = setTimeout(later, wait);\n      if (callNow) func.apply(context, args);\n    };\n  };\n    $(function(){\n      function handleResize(){\n        if ($(window).width()>960){\n          above960breakpoint();\n        } else {\n          //on mobile, load the galapagos bg, otherwise the video is there.\n          $('#sesqui-video').css(\"background-image\", \"url(/assets/images/video/features/glorious-to-view.jpg); clear: both;\");\n        }\n      }\n      resizeEventHandler = debounce(handleResize, 250);\n      window.addEventListener('resize',resizeEventHandler);\n      handleResize();\n      \n    });",
+      "keyword": "register",
+      "text": "/*<![CDATA[*/new function() { const sk = FW.$('#sk_a02017b1-9598-4898-b883-e11e8b7caca3'), form = sk.closest('form'); let fetchKey; fetchKey = function() { form.off('focusin', fetchKey); FW.$.ajax({ method: 'POST', url: 'https://apply.northeastern.edu/register/form?cmd=sk', data: { 'id': 'a02017b1-9598-4898-b883-e11e8b7caca3', 'sk': sk.val() }, xhrFields: { withCredentials: true }, dataType: 'text', success: function(data) { sk.val(data); } }); }; form.on('focusin', fetchKey); }();/*]]>*/",
       "parent_tag": "script",
       "parent_class": []
     },
     {
       "keyword": "register",
-      "text": "Register",
-      "parent_tag": "span",
-      "parent_class": [
-        "h4"
-      ]
-    },
-    {
-      "keyword": "register",
-      "text": "Sorry, you must choose a future date to register for events.",
+      "text": "Thank you for your interest in visiting! Unfortunately, there is not enough capacity remaining for this event to accommodate your party (including guests). We invite you to register for another visit that is convenient for you!",
       "parent_tag": "div",
       "parent_class": [
-        "alert",
-        "alert-warning"
+        "error"
       ]
     }
   ],
-  "page_title": "Plan Your Visit | Cornell University",
-  "timestamp": "2025-07-09T14:56:24.445709"
+  "page_title": "Prospective Student Information Session and Tour",
+  "timestamp": "2025-07-09T15:24:40.147089"
 }
