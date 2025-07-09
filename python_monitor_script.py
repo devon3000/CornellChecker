@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Cornell Visit Activities Page Monitor
+Visit Activities Page Monitor
 Checks for changes in form submission options and sends SMS notifications
 """
 
@@ -21,7 +21,7 @@ try:
 except ImportError:
     TWILIO_AVAILABLE = False
 
-TARGET_URL = "https://www.cornell.edu/visit/plan/activities/?date=6-27-2025"
+TARGET_URL = "https://apply.northeastern.edu/register/?id=a02017b1-9598-4898-b883-e11e8b7caca3"
 SNAPSHOT_FILE = "page_snapshot.json"
 CONTENT_FILE = "page_content.html"
 
@@ -181,7 +181,7 @@ def send_sms_gmail(message):
     
     try:
         msg = MIMEText(message)
-        msg['Subject'] = 'Cornell Visit Update'
+        msg['Subject'] = 'Northeastern Visit Update'
         msg['From'] = gmail_user
         msg['To'] = sms_email
         
@@ -236,7 +236,7 @@ def send_email_notification(subject, body):
 def send_notification(message):
     """Send notification via email"""
     print(f"Sending notification: {message}")
-    subject = "Cornell Visit Activities Update"
+    subject = "Northeastern Visit Activities Update"
     if send_email_notification(subject, message):
         return True
     else:
@@ -310,7 +310,7 @@ def main():
     if changes:
         change_summary = "; ".join(changes[:3])  # Limit to first 3 changes
         message = (
-            f"Cornell Visit Page Changed!\n\n{change_summary}\n\n"
+            f"Northeastern Visit Page Changed!\n\n{change_summary}\n\n"
             f"Check: {TARGET_URL}"
         )
         
@@ -327,7 +327,7 @@ if __name__ == "__main__":
     if os.getenv("TEST_EMAIL", "false").lower() == "true":
         print("TEST_EMAIL is true, sending test email...")
         success = send_email_notification(
-            "Test Email from CornellChecker",
+            "Test Email from NortheasternChecker",
             f"This is a test email from your GitHub Actions workflow.\n\nMonitored URL: {TARGET_URL}"
         )
         if success:
