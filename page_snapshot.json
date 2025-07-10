@@ -1,31 +1,31 @@
 {
   "forms": {
     "form_0": {
-      "action": "https://apply.northeastern.edu/register/?id=a02017b1-9598-4898-b883-e11e8b7caca3&cmd=submit&output=xdm&embedElement=form_a02017b1-9598-4898-b883-e11e8b7caca3",
+      "action": "https://apply.college.harvard.edu/portal/22-info-tour?id=a67619ea-3807-4e8d-bd8a-c481f373799e&cmd=submit&output=xdm&embedElement=form_a67619ea-3807-4e8d-bd8a-c481f373799e",
       "method": "post",
       "inputs": [
         {
           "type": "hidden",
           "name": "id",
-          "value": "a02017b1-9598-4898-b883-e11e8b7caca3",
+          "value": "a67619ea-3807-4e8d-bd8a-c481f373799e",
           "text": ""
         },
         {
           "type": "hidden",
           "name": "sk",
-          "value": "1QuiXSdfR_yYjs-FFqJ2EYka0ycW2wWozjHUKgG7Zuj8SjPhvcxWKHGgnfg_h99y_SNjYM4-RdMv9ZOWUIqATDggXwJxrBmT",
+          "value": "1QuiXSdfR_ztw2v9AEr075Uhf5G_NWsIvoswB-R4PklIpT90mpaOUDR3mENM19nB5HEnu7WFgzqnpKC5bpvhaNKjYbNaiLV2",
           "text": ""
         },
         {
           "type": "hidden",
           "name": "referrer",
-          "value": "https://apply.northeastern.edu/",
+          "value": "https://apply.college.harvard.edu/",
           "text": ""
         },
         {
           "type": "hidden",
           "name": "",
-          "value": "2025-07-10T10:00:00",
+          "value": "2025-07-11T10:00:00",
           "text": ""
         }
       ]
@@ -34,20 +34,32 @@
   "activities": [],
   "status_elements": [
     {
+      "keyword": "full",
+      "text": "View our full schedule here",
+      "parent_tag": "a",
+      "parent_class": []
+    },
+    {
+      "keyword": "full",
+      "text": "This event is full. Please return to the calendar to pick a new date to visit. Thank you.",
+      "parent_tag": "div",
+      "parent_class": [
+        "error"
+      ]
+    },
+    {
       "keyword": "register",
-      "text": "/*<![CDATA[*/new function() { const sk = FW.$('#sk_a02017b1-9598-4898-b883-e11e8b7caca3'), form = sk.closest('form'); let fetchKey; fetchKey = function() { form.off('focusin', fetchKey); FW.$.ajax({ method: 'POST', url: 'https://apply.northeastern.edu/register/form?cmd=sk', data: { 'id': 'a02017b1-9598-4898-b883-e11e8b7caca3', 'sk': sk.val() }, xhrFields: { withCredentials: true }, dataType: 'text', success: function(data) { sk.val(data); } }); }; form.on('focusin', fetchKey); }();/*]]>*/",
+      "text": "/*<![CDATA[*/new function() { const sk = FW.$('#sk_a67619ea-3807-4e8d-bd8a-c481f373799e'), form = sk.closest('form'); let fetchKey; fetchKey = function() { form.off('focusin', fetchKey); FW.$.ajax({ method: 'POST', url: 'https://apply.college.harvard.edu/register/form?cmd=sk', data: { 'id': 'a67619ea-3807-4e8d-bd8a-c481f373799e', 'sk': sk.val() }, xhrFields: { withCredentials: true }, dataType: 'text', success: function(data) { sk.val(data); } }); }; form.on('focusin', fetchKey); }();/*]]>*/",
       "parent_tag": "script",
       "parent_class": []
     },
     {
       "keyword": "register",
-      "text": "Thank you for your interest in visiting! Unfortunately, there is not enough capacity remaining for this event to accommodate your party (including guests). We invite you to register for another visit that is convenient for you!",
+      "text": "Thank you for your interest in Harvard College. Please submit the form below to register.",
       "parent_tag": "div",
-      "parent_class": [
-        "error"
-      ]
+      "parent_class": []
     }
   ],
-  "page_title": "Prospective Student Information Session and Tour",
-  "timestamp": "2025-07-09T15:44:17.659738"
+  "page_title": "On-Campus Visit Registration",
+  "timestamp": "2025-07-10T22:48:24.340961"
 }
