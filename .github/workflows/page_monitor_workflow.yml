@@ -30,6 +30,7 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
           TEST_EMAIL: ${{ github.event.inputs.test_email }}
+          TARGET_URL: ${{ secrets.TARGET_URL }}
         run: |
           TODAY=$(date -u +%Y-%m-%d)
           STOP_DATE="2025-07-11"

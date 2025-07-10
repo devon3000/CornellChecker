@@ -21,7 +21,7 @@ try:
 except ImportError:
     TWILIO_AVAILABLE = False
 
-TARGET_URL = "https://apply.northeastern.edu/register/?id=a02017b1-9598-4898-b883-e11e8b7caca3"
+TARGET_URL = os.getenv("TARGET_URL", "https://apply.northeastern.edu/register/?id=a02017b1-9598-4898-b883-e11e8b7caca3")
 SNAPSHOT_FILE = "page_snapshot.json"
 CONTENT_FILE = "page_content.html"
 
