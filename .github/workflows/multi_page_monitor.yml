@@ -1,10 +1,4 @@
-name: Northeastern Page Monitor
-
-# For multiple pages, create separate workflow files like:
-# - northeastern_monitor.yml
-# - cornell_monitor.yml  
-# - mit_monitor.yml
-# Each with their own TARGET_URL secret and schedule
+name: Multi-Page Monitor
 
 on:
   schedule:
@@ -30,13 +24,20 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Check date and run monitor script
+      - name: Check date and run multi-page monitor script
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
           TEST_EMAIL: ${{ github.event.inputs.test_email }}
-          TARGET_URL: ${{ secrets.TARGET_URL }}
+          # Option 1: Use JSON config file (urls_config.json)
+          # Option 2: Use environment variables for multiple URLs
+          TARGET_URL_1: ${{ secrets.TARGET_URL_1 }}
+          TARGET_NAME_1: ${{ secrets.TARGET_NAME_1 }}
+          TARGET_URL_2: ${{ secrets.TARGET_URL_2 }}
+          TARGET_NAME_2: ${{ secrets.TARGET_NAME_2 }}
+          TARGET_URL_3: ${{ secrets.TARGET_URL_3 }}
+          TARGET_NAME_3: ${{ secrets.TARGET_NAME_3 }}
         run: |
           TODAY=$(date -u +%Y-%m-%d)
           STOP_DATE="2025-07-11"
@@ -44,11 +45,11 @@ jobs:
             echo "Date is after $STOP_DATE. Exiting workflow."
             exit 0
           fi
-          python python_monitor_script.py
-      - name: Commit snapshot if changed
+          python python_monitor_script_multi.py
+      - name: Commit snapshots if changed
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-          git add page_snapshot.json
-          git diff --cached --quiet || git commit -m "Update snapshot"
-          git push
+          git add page_snapshot_*.json page_content_*.html
+          git diff --cached --quiet || git commit -m "Update multi-page snapshots"
+          git push 

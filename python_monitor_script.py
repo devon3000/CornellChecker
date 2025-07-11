@@ -308,14 +308,19 @@ def main():
     changes = compare_snapshots(previous_data, current_data)
     
     if changes:
-        change_summary = "; ".join(changes[:3])  # Limit to first 3 changes
-        message = (
-            f"Northeastern Visit Page Changed!\n\n{change_summary}\n\n"
-            f"Check: {TARGET_URL}"
-        )
-        
-        print(f"Changes detected: {change_summary}")
-        send_notification(message)
+        # Check if the only change is "details unclear"
+        if len(changes) == 1 and "details unclear" in changes[0]:
+            print(f"Minor change detected (details unclear) - suppressing notification")
+            print(f"Page hash changed but no specific changes identified")
+        else:
+            change_summary = "; ".join(changes[:3])  # Limit to first 3 changes
+            message = (
+                f"Northeastern Visit Page Changed!\n\n{change_summary}\n\n"
+                f"Check: {TARGET_URL}"
+            )
+            
+            print(f"Changes detected: {change_summary}")
+            send_notification(message)
     else:
         print("No changes detected")
     

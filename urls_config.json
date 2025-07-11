@@ -1,0 +1,16 @@
+{
+  "urls": [
+    {
+      "name": "northeastern",
+      "url": "https://apply.northeastern.edu/register/?id=a02017b1-9598-4898-b883-e11e8b7caca3"
+    },
+    {
+      "name": "cornell",
+      "url": "https://admissions.cornell.edu/visit/visit-campus"
+    },
+    {
+      "name": "mit",
+      "url": "https://mitadmissions.org/visit/"
+    }
+  ]
+} 

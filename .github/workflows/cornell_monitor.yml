@@ -1,14 +1,8 @@
-name: Northeastern Page Monitor
-
-# For multiple pages, create separate workflow files like:
-# - northeastern_monitor.yml
-# - cornell_monitor.yml  
-# - mit_monitor.yml
-# Each with their own TARGET_URL secret and schedule
+name: Cornell Page Monitor
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/15 * * * *'  # Different schedule for Cornell
   workflow_dispatch:
     inputs:
       test_email:
@@ -36,7 +30,7 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
           TEST_EMAIL: ${{ github.event.inputs.test_email }}
-          TARGET_URL: ${{ secrets.TARGET_URL }}
+          TARGET_URL: ${{ secrets.CORNELL_TARGET_URL }}
         run: |
           TODAY=$(date -u +%Y-%m-%d)
           STOP_DATE="2025-07-11"
@@ -50,5 +44,5 @@ jobs:
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add page_snapshot.json
-          git diff --cached --quiet || git commit -m "Update snapshot"
-          git push
+          git diff --cached --quiet || git commit -m "Update Cornell snapshot"
+          git push 
