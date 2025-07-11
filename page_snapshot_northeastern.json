@@ -1,0 +1,54 @@
+{
+  "forms": {
+    "form_0": {
+      "action": "https://apply.northeastern.edu/register/?id=a02017b1-9598-4898-b883-e11e8b7caca3&cmd=submit&output=xdm&embedElement=form_a02017b1-9598-4898-b883-e11e8b7caca3",
+      "method": "post",
+      "inputs": [
+        {
+          "type": "hidden",
+          "name": "id",
+          "value": "a02017b1-9598-4898-b883-e11e8b7caca3",
+          "text": ""
+        },
+        {
+          "type": "hidden",
+          "name": "sk",
+          "value": "1QuiXSdfR_zwxC3DMVukuTo9kyscbLlE70OK2K8iMCNYhLMHrigy_1IQRxFYhTdMoEZuxK4LcJClxgxWDOvHWSO_t8riqSOe",
+          "text": ""
+        },
+        {
+          "type": "hidden",
+          "name": "referrer",
+          "value": "https://apply.northeastern.edu/",
+          "text": ""
+        },
+        {
+          "type": "hidden",
+          "name": "",
+          "value": "2025-07-10T10:00:00",
+          "text": ""
+        }
+      ]
+    }
+  },
+  "activities": [],
+  "status_elements": [
+    {
+      "keyword": "available",
+      "text": "Registration is no longer available because the registration deadline has passed.",
+      "parent_tag": "p",
+      "parent_class": [
+        "error"
+      ]
+    },
+    {
+      "keyword": "register",
+      "text": "/*<![CDATA[*/new function() { const sk = FW.$('#sk_a02017b1-9598-4898-b883-e11e8b7caca3'), form = sk.closest('form'); let fetchKey; fetchKey = function() { form.off('focusin', fetchKey); FW.$.ajax({ method: 'POST', url: 'https://apply.northeastern.edu/register/form?cmd=sk', data: { 'id': 'a02017b1-9598-4898-b883-e11e8b7caca3', 'sk': sk.val() }, xhrFields: { withCredentials: true }, dataType: 'text', success: function(data) { sk.val(data); } }); }; form.on('focusin', fetchKey); }();/*]]>*/",
+      "parent_tag": "script",
+      "parent_class": []
+    }
+  ],
+  "page_title": "Prospective Student Information Session and Tour",
+  "timestamp": "2025-07-11T13:22:30.235454",
+  "url": "https://apply.northeastern.edu/register/?id=a02017b1-9598-4898-b883-e11e8b7caca3"
+}
